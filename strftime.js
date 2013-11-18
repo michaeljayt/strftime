@@ -4,6 +4,8 @@
 // @_sjs
 //
 // Copyright 2010 - 2013 Sami Samhuri <sami@samhuri.net>
+// 
+// zh-CN locale By michaeljayt<michaeljayt@gmail.com>
 //
 // MIT License
 // http://sjs.mit-license.org
@@ -28,14 +30,14 @@
   function words(s) { return (s || '').split(' '); }
 
   var DefaultLocale =
-  { days: words('Sunday Monday Tuesday Wednesday Thursday Friday Saturday')
-  , shortDays: words('Sun Mon Tue Wed Thu Fri Sat')
-  , months: words('January February March April May June July August September October November December')
-  , shortMonths: words('Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec')
-  , AM: 'AM'
-  , PM: 'PM'
-  , am: 'am'
-  , pm: 'pm'
+  { days: words('星期日 星期一 星期二 星期三 星期四 星期五 星期六')
+  , shortDays: words('日 一 二 三 四 五 六')
+  , months: words('一月份 二月份 三月份 四月份 五月份 六月份 七月份 八月份 九月份 十月份 十一月份 十二月份')
+  , shortMonths: words('一月 二月 三月 四月 五月 六月 七月 八月 九月 十月 十一月 十二月')
+  , AM: '上午'
+  , PM: '下午'
+  , am: '上午'
+  , pm: '下午'
   };
 
   namespace.strftime = strftime;
